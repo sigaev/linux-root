@@ -1,0 +1,18 @@
+app-editors/vim python
+dev-lang/python:2.7 -tk
+dev-libs/boost python
+dev-libs/libxml2 python
+dev-vcs/git subversion tk
+dev-vcs/subversion -dso perl
+gnome-base/gvfs gnome
+media-libs/mesa -video_cards_intel video_cards_i965
+net-libs/libproxy gnome
+net-misc/ntp caps
+sys-boot/grub -truetype
+sys-devel/gcc -gtk
+sys-fs/cryptsetup -static dynamic
+sys-fs/lvm2 -static
+sys-fs/udev gudev
+virtual/udev gudev
+www-client/google-chrome -linguas_ja -linguas_ko -linguas_ru -linguas_zh_CN -linguas_zh_TW
+x11-wm/compiz-fusion emerald

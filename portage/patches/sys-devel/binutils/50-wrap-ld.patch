@@ -1,0 +1,20 @@
+diff --git a/gold/Makefile.in b/gold/Makefile.in
+index d69acc9..1f17d22 100644
+--- a/gold/Makefile.in
++++ b/gold/Makefile.in
+@@ -1165,6 +1165,7 @@ install-exec-local: ld-new$(EXEEXT)
+ 	    || $(INSTALL_PROGRAM) ld-new$(EXEEXT) $(DESTDIR)$(tooldir)/bin/ld$(EXEEXT); \
+ 	  fi; \
+ 	fi
++	$(INSTALL_PROGRAM) -m755 ../../binutils*/gold/ld $(DESTDIR)$(bindir)/$${ld}$(EXEEXT)
+ 
+ # We want install to imply install-info as per GNU standards, despite
+ # the cygnus option.
+diff --git a/gold/ld b/gold/ld
+new file mode 100644
+index 0000000..5f40214
+--- /dev/null
++++ b/gold/ld
+@@ -0,0 +1,2 @@
++#!/bin/bash
++exec $0.${OVERRIDE_LINKER:-gold} "$@"
