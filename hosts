@@ -29,3 +29,6 @@
 # from your network provider (if any) or from your regional registry (ARIN, 
 # APNIC, LACNIC, RIPE NCC, or AfriNIC.)
 #
+192.168.0.100	data
+192.168.0.101	core-i
+192.168.0.103	pentium-m
