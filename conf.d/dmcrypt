@@ -59,6 +59,11 @@
 #swap=crypt-swap
 #source='/dev/hda2'
 
+swap=swap
+source=/boot/swap
+options='-caes-xts-plain64 -hsha512 -s512 -d/dev/urandom'
+pre_mount='mkswap -f -Lswap ${dev}'
+
 ## /home with passphrase
 #target=crypt-home
 #source='/dev/hda5'
