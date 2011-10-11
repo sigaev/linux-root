@@ -3,4 +3,4 @@
 # "man distcc" for the format of this file.
 #
 # By default, just test that it works in loopback mode.
-127.0.0.1
+data
