@@ -1,0 +1,3 @@
+>app-emulation/virtualbox-bin-4.2.12
+app-emulation/virtualbox-modules
+>=dev-python/pytools-2013.5

@@ -1,0 +1,33 @@
+app-admin/eselect-boost ~amd64 ~x86
+app-emulation/emul-linux-x86-baselibs ~amd64
+app-emulation/emul-linux-x86-db ~amd64
+app-emulation/emul-linux-x86-medialibs ~amd64
+app-emulation/emul-linux-x86-opengl ~amd64
+app-emulation/emul-linux-x86-qtlibs ~amd64
+app-emulation/emul-linux-x86-soundlibs ~amd64
+app-emulation/emul-linux-x86-xlibs ~amd64
+app-emulation/virtualbox-bin ~amd64 ~x86
+dev-lang/R ~amd64 ~x86
+dev-libs/boost ~amd64 ~x86
+dev-util/nvidia-cuda-toolkit ~amd64 ~x86
+dev-python/compizconfig-python ~amd64 ~x86
+dev-python/pycuda ~amd64 ~x86
+dev-python/pytools ~amd64 ~x86
+dev-util/boost-build ~amd64 ~x86
+dev-util/perf ~amd64 ~x86
+net-im/skype ~amd64 ~x86
+sys-boot/grub ~amd64 ~x86
+sys-devel/gcc:4.7 ~amd64 ~x86
+sys-fs/btrfs-progs ~amd64 ~x86
+www-client/firefox-bin ~amd64 ~x86
+www-client/google-chrome ~amd64 ~x86
+www-plugins/google-talkplugin ~amd64 ~x86
+x11-apps/ccsm ~amd64 ~x86
+x11-libs/compiz-bcop ~amd64 ~x86
+x11-libs/libcompizconfig ~amd64 ~x86
+x11-plugins/compiz-plugins-extra ~amd64 ~x86
+x11-plugins/compiz-plugins-main ~amd64 ~x86
+x11-themes/emerald-themes ~amd64 ~x86
+x11-wm/compiz ~amd64 ~x86
+x11-wm/compiz-fusion ~amd64 ~x86
+x11-wm/emerald ~amd64 ~x86
