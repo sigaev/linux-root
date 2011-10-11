@@ -13,7 +13,7 @@ METALOG_OPTS=""
 
 # Space delimited list of devices to write "console" messages to
 #CONSOLE="/dev/console /dev/tty10"
-CONSOLE="/dev/tty10"
+CONSOLE="/dev/tty12"
 
 # Format of logging (make sure you use single quotes)
 FORMAT='$1 [$2] $3'
