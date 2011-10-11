@@ -1,0 +1,8 @@
+#!/sbin/runscript
+
+start() {
+	ebegin "Starting VBoxService"
+	pkill VBoxService
+	! VBoxService --disable-{control,vminfo,cpuhotplug,memballoon,vmstats}
+	eend $? "Failed to start VBoxService"
+}
