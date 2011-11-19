@@ -1,0 +1,14 @@
+#!/bin/bash
+if lsmod | grep -q '^nvidia '; then
+	mknod -m666 /dev/nvidia0 c 195 0
+	mknod -m666 /dev/nvidiactl c 195 255
+fi
+ogl=`eselect opengl show`
+cd /etc
+if [[ -e /dev/nvidia0 ]] && ! lsmod | grep -q '^drm .*[ ,]i'; then
+	[[ $ogl != nvidia ]] && eselect opengl set nvidia
+	ln -sfn ../../usr/lib/opengl/nvidia/xorg.conf X11/
+else
+	[[ $ogl == nvidia ]] && eselect opengl set xorg-x11
+	rm -f X11/xorg.conf
+fi

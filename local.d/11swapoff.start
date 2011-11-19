@@ -1,0 +1,2 @@
+#!/bin/bash
+grep zram /proc/swaps | cut -d\  -f1 | xargs -r swapoff
