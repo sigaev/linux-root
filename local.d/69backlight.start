@@ -1,0 +1,2 @@
+#!/bin/bash
+[[ -e /sys/class/backlight/acpi_video0 ]] && echo 10 >/sys/class/backlight/acpi_video0/brightness
