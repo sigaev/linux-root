@@ -1,0 +1,22 @@
+#!/sbin/runscript
+
+depend()
+{
+	before udev sysfs
+}
+
+start()
+{
+	mount -nronoatime,nodev,nosuid /cdrom/modules.sfs /boot 2>/dev/null \
+		|| mount -nronoatime,nodev,nosuid LABEL=boot /boot 2>/dev/null \
+		|| mount -nronoatime,nodev,nosuid,subvol=boot LABEL=root /boot
+	(
+		cd /etc
+		for i in ^LABEL={swap,home}; do
+			grep -q $i fstab || git show HEAD:fstab | grep $i
+		done >>fstab
+		git checkout hosts
+	) 2>/dev/null
+	modprobe aesni-intel || modprobe aes-i586
+	[[ ! -x /boot/init ]] || /boot/init
+}
