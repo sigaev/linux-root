@@ -1,0 +1,4 @@
+config_eth0="dhcp"
+dhcpcd_eth0="-Lt20"
+metric_eth0=2
+metric_wlan0=1
