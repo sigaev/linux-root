@@ -1,0 +1,3 @@
+#!/bin/bash
+pm-suspend
+cat /sys/fs/cgroup/cpuset/cpuset.cpus >/sys/fs/cgroup/cpuset/user/cpuset.cpus

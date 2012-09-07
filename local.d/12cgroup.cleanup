@@ -1,0 +1,2 @@
+#!/bin/bash
+exec rmdir /sys/fs/cgroup/${0#/etc/local.d/12cgroup.cleanup.}$1

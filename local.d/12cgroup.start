@@ -1,0 +1,7 @@
+#!/bin/bash
+echo 1 >/sys/fs/cgroup/cpuset/cgroup.clone_children
+for i in /etc/local.d/12cgroup.cleanup.*; do
+	e=${i#/etc/local.d/12cgroup.cleanup.}
+	echo $i >/sys/fs/cgroup/$e/release_agent
+	mkdir -m1777 /sys/fs/cgroup/$e/user
+done
